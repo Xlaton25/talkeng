@@ -116,7 +116,7 @@ Please ensure that your contributions align with the project's coding convention
 
 **10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 
-**11.** **Congratulations!** You've made your first contribution! 🙌🏼
+**11.** **Congratulations!** You've made your first contribution! 🙌🏼 :)
 
 ## License
 This project is licensed under the MIT License. Feel free to modify and distribute it according to the terms of the license.
