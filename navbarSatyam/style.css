@@ -1,0 +1,197 @@
+ /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+/* Style for the logo */
+.logo img {
+  width: 100px; /* Adjust the width as per your desired size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the menu buttons */
+.menu button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+  /* background-color: #999; */
+  background-color: #ff6f00;
+  transform: scale(1.1);
+}
+
+/* Style for the "Book a Trial" button */
+.book-trial {
+  padding: 8px 12px;
+  background-color: #ff6f00;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-trial:hover {
+  background-color: #ff8f00;
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+/* *************************************************** */
+/* Style for the dark mode toggle */
+.dark-mode-toggle {
+  margin-left: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+.dark-mode nav {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .menu button {
+  background-color: #333;
+  color: #fff;
+}
+.dark-mode .menu button:hover {
+  background-color: #ff6f00;
+}
+
+
+/* Style for the mobile menu toggle 
+.mobile-menu-toggle {
+  display: none;
+}
+
+.toggle-bars {
+  font-size: 24px;
+  cursor: pointer;
+}
+*/
+/* Style for the mobile menu toggle 
+.mobile-menu-toggle {
+  display: none;
+}
+
+.toggle-bars {
+  font-size: 24px;
+  cursor: pointer;
+}
+*/
+/* Style for the mobile menu 
+.mobile-menu {
+  display: none;
+}
+*/
+/* Media query for mobile devices 
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  
+  .book-trial {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .mobile-menu button {
+    margin: 5px 0;
+    padding: 8px 12px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+*/
