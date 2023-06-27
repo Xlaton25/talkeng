@@ -7,16 +7,15 @@ body {
     }
 /* NAVBAR */
 header{
-    background-color: azure;
-    height: 80px;
-
+    background-color: rgb(217, 248, 248);
+    height: 90px;
 }
     
 .left {
     display: inline-block;
     position: absolute;
     left: 20px;
-    top: 10px;
+    top: 8px;
 }
 
 .left img {
@@ -30,12 +29,12 @@ header{
     text-align: center;
 }
 
-.mid {
+#mid {
     display: block;
     width: 60%;
-    margin: 10px auto;
+    margin: 0px auto;
     padding-left: 10px;
-    /* border: 2px solid green; */
+    padding-top: 15px;
 }
 
 .right {
@@ -58,7 +57,7 @@ header{
 
 .navbar li a {
     position: relative;
-    font-size: 1.1em;
+    font-size: 0.9rem;
     color: rgb(87, 87, 87);
     text-decoration: none;
     padding: 6px 20px;
@@ -102,7 +101,7 @@ header{
     background-color: rgb(248, 116, 69);
     color: white;
     border: none;
-    margin: 2.5px;
+    margin: 2.5px 20px;
     padding: 8px 50px;
     border-radius: 18px;
     font-size: 20px;
@@ -115,3 +114,35 @@ header{
     transition: .5s;
 }
 
+/* Dark Mode */
+.dark-mode {
+    background-color: black;
+  }
+
+.darkmode-btn{
+    border-radius: 35px;
+    border-width: 0px;
+    background-color: rgb(113, 113, 113);
+    color: aliceblue;
+    height: 35px;
+    width: 35px;
+    padding-top: 6px;
+    margin-right: 10px;
+  
+} 
+
+.darkmode-btn:hover{
+    background-color: rgb(181, 181, 181);
+    color: rgb(83, 81, 81);
+    transform: scale3d(1.09,1.09,1.09);
+    transition: .5s;
+    border-width: 0px;
+}
+
+.dark-mode header{
+    background-color: rgb(56, 55, 55);
+    box-shadow: 2px;
+}
+.dark-mode .navbar li a {
+    color: rgb(194, 186, 177);
+}
