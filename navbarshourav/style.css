@@ -11,8 +11,8 @@ body{
     position: absolute;
 }
 .logo img{
-    height: 75px;
     width: 150px;
+    height: auto;
     left: 59px;
     margin: 10px;
     padding: 20px;
