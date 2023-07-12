@@ -12,7 +12,8 @@
 </head>
  
 <body>
- 
+    
+    <!-- HEADER -->
     <header class="header">
         <!-- Left box for logo -->
         <div class="left">
@@ -20,21 +21,25 @@
     
         </div>
         <!-- Mid box for navbar -->
-        <div id="mid">
+        <div class="mid" id="nav-link">
+            <button id="hamburger" aria-expanded="false">
+                <i class="bx bx-menu" aria-hidden="true"></i>
+              </button>
+          
             <ul class="navbar">
-                <li><a href="#" class="bt active">Home<span></span></a></li>
-                <li><a href="#" class="bt">KEY FEATURES<span></span></a></li>
-                <li><a href="#" class="bt">APPLY AS TUTOR<span></span></a></li>
-                <li><a href="#" class="bt">FAQ<span></span></a></li>
-                <li><a href="#" class="bt">OLYMPIAD 2023<span></span></a></li>
+                <li><a href="#" class="nav-btn active">Home<span></span></a></li>
+                <li><a href="#" class="nav-btn">KEY FEATURES<span></span></a></li>
+                <li><a href="#" class="nav-btn">APPLY AS TUTOR<span></span></a></li>
+                <li><a href="#" class="nav-btn">FAQ<span></span></a></li>
+                <li><a href="#" class="nav-btn">OLYMPIAD 2023<span></span></a></li>
             </ul>
         </div>
 
         <!-- Right box for buttons -->
         <div class="right">
-            <button class="btn">Book A Trial</button>
+            <button class="navbar-btn">Book A Trial</button>
             <button onclick="myFunction()" class="darkmode-btn">         
-                <i class='bx bx-moon change-theme' id="theme-button"></i>
+                <i class='bx bx-sun change-theme' id="theme-button"></i>
 
             </button>
             

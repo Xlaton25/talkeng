@@ -7,19 +7,19 @@ body {
     }
 /* NAVBAR */
 header{
-    background-color: rgb(217, 248, 248);
+    background-color: rgb(244, 248, 248);
     height: 90px;
 }
     
 .left {
     display: inline-block;
     position: absolute;
-    left: 20px;
-    top: 8px;
+    left: 35px;
+    top: 14px;
 }
 
 .left img {
-    width: 200px;
+    width: 180px;
     
 }
 
@@ -29,18 +29,18 @@ header{
     text-align: center;
 }
 
-#mid {
+.mid {
     display: block;
     width: 60%;
     margin: 0px auto;
     padding-left: 10px;
-    padding-top: 15px;
+    padding-top: 18px;
 }
 
 .right {
     position: absolute;
-    right: 30px;
-    top: 20px;
+    right: 40px;
+    top: 22px;
     display: inline-block;
 }
 
@@ -51,7 +51,6 @@ header{
 
 .navbar li {
     display: inline-block;
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -60,7 +59,7 @@ header{
     font-size: 0.9rem;
     color: rgb(87, 87, 87);
     text-decoration: none;
-    padding: 6px 20px;
+    padding: 4px 12px;
     /* transition: .5s; */
 }
 
@@ -68,6 +67,7 @@ header{
     color: orangered;
     border-bottom: 2px solid orangered;
     border-radius: 15px;
+
 }
 .navbar li a.active:hover, 
 .navbar li a.active span{
@@ -77,6 +77,7 @@ header{
 }
 .navbar li a:hover {
     color: orangered;
+    transition: .5s; 
 }
 .navbar li a span {
     position: absolute;
@@ -96,53 +97,127 @@ header{
     opacity: 1;
 }
 
-.btn {
+.navbar-btn {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(248, 116, 69);
     color: white;
     border: none;
     margin: 2.5px 20px;
-    padding: 8px 50px;
-    border-radius: 18px;
-    font-size: 20px;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.btn:hover {
+.navbar-btn:hover {
     background-color: rgb(12, 207, 251);
     transform: scale3d(1.05,1.05,1.05);
     transition: .5s;
 }
 
-/* Dark Mode */
-.dark-mode {
-    background-color: black;
-  }
-
 .darkmode-btn{
+    position: relative;
     border-radius: 35px;
     border-width: 0px;
-    background-color: rgb(113, 113, 113);
-    color: aliceblue;
+    background: #ecf0f3;
+    color: rgb(22, 25, 27);
     height: 35px;
     width: 35px;
     padding-top: 6px;
-    margin-right: 10px;
+    top: 4px;
+    font-size: 1.2rem;
+    /* margin-right: 8px; */
+    box-shadow: -3px -3px 7px #cecbcb,
+                 3px 3px 5px #737374;
+    transition: all 0.3s ease;
   
 } 
 
 .darkmode-btn:hover{
-    background-color: rgb(181, 181, 181);
-    color: rgb(83, 81, 81);
-    transform: scale3d(1.09,1.09,1.09);
-    transition: .5s;
-    border-width: 0px;
+    position: relative; 
+    cursor: pointer;
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 5px #ebe9e9,
+                inset 3px 3px 5px #989595;
+    transform: scale3d(0.95,0.95,0.95);
+    color: #3498db;     
+    transition: all .3s ease;      
 }
 
-.dark-mode header{
+/* Dark Theme */
+.dark-theme {
+    background-color: black;
+  }
+
+
+
+.dark-theme header{
     background-color: rgb(56, 55, 55);
     box-shadow: 2px;
 }
-.dark-mode .navbar li a {
+.dark-theme .navbar li a {
     color: rgb(194, 186, 177);
 }
+.dark-theme .darkmode-btn{
+    background-color: #929298;
+    box-shadow: -3px -3px 7px rgb(40, 40, 40),
+                  3px 3px 5px rgb(11, 11, 11);
+    transition: all .3s ease;   
+}
+.dark-theme .darkmode-btn:hover{
+    background-color: #929298;
+    color: rgb(249, 246, 246);
+    box-shadow: inset -3px -3px 5px rgb(131, 130, 130),
+                inset  3px 3px 7px rgb(35, 35, 35);
+    transform: scale3d(0.95,0.95,0.95);           
+    transition: all .3s ease;
+}
+
+/* Hamburger */
+#nav-link {
+    position: relative;
+    background: var(--white);
+  }
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+  }
+#hamburger {
+    display: none;
+    padding: 0.1rem;
+    margin-left: 1rem;
+    font-size: 1.9rem;
+  }
+
+  @media (max-width: 1035px) {
+    #hamburger {
+      display: block;
+      position: relative;
+      left: calc(100vw - 9rem);
+    }
+
+    #nav-link{
+        display: none;
+        position: absolute;
+        top: 87px;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+    }
+} 
+
+@media (max-width: 450px) {
+    .right {
+      display: none;
+    }
+}
+@media (max-width: 1199px){
+/* .mid {
+    background-color: #f7f7f7;
+    padding:  15px;
+    height: 100px;
+    box-shadow: none;
+    text-align: center;
+}  */}
