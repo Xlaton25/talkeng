@@ -1,0 +1,22 @@
+      /*hide google translate link | logo | banner-frame */
+      .goog-logo-link,
+      .gskiptranslate,
+      .goog-te-gadget span,
+      .goog-te-banner-frame,
+      #goog-gt-tt,
+      .goog-te-balloon-frame,
+      div#goog-gt- {
+          display: none !important;
+      }
+
+      .goog-te-gadget {
+          color: transparent !important;
+          font-size: 0px;
+      }
+
+      .goog-text-highlight {
+          background: none !important;
+          box-shadow: none !important;
+      }
+
+      /* end hide  */
