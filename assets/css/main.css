@@ -111,6 +111,10 @@ li {
     list-style: none
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header,
 nav,
 section,
@@ -404,7 +408,9 @@ body {
 
 .header-area .main-nav .nav li:last-child .main-red-button-hover a:hover,
 .background-header .main-nav .nav li:last-child .main-red-button-hover a:hover {
-    background-color: #03a4ed !important
+    background-color: #03a4ed !important;
+    transform: scale3d(1.05,1.05,1.05);
+    transition: .5s;
 }
 
 .header-area .main-nav .nav li a {
