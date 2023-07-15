@@ -18,6 +18,7 @@
     
         .skiptranslate > .skiptranslate{
         visibility: hidden !important;
+        display: none !important;
        }
     
        .goog-te-combo:focus-visible{
