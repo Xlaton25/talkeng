@@ -40,11 +40,24 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/google-translate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+<link rel="stylesheet" href="assets\css\loading.css">
     <script src="https://kit.fontawesome.com/6f5382593f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div id="loader">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+        <script>
+            var loader = document.getElementById("loader");
+            window.addEventListener("load", function() {
+              loader.style.display = "none";
+            });
+          </script>
+      </div> 
+      
     <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
         <div class="container">
             <div class="row">
