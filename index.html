@@ -67,11 +67,11 @@
                             <li class="scroll-to-section li-css-last d-none d-block-in-mobile">
                                 <div class="main-red-button-hover"><a
                                         href="https://play.google.com/store/apps/details?id=io.talkeng.app.global"
-                                        target="_blank" data-animation-name="rubberBand" data-animation-duration="1200"
-                                        class="main-red-button-hover pt-0 mt-0">Book A Trial</a></div>
+                                        target="_blank" 
+                                        class="main-red-button-hover pt-0 mt-0" id="main-red-btn">Book A Trial</a></div>
                             </li>
                             <li class="scroll-to-section d-none d-block-in-mobile">
-                                <div id="google_translate_mobile" class="google_translate_element"></div>
+                                <div id="google_translate_mobile" class="google_translate_element bg-grey-new"></div>
                             </li>
                         </ul>
                         <ul class="nav d-none-in-mobile">
@@ -881,6 +881,7 @@
             </div>
     </footer>
     <script>
+        var mainRedBTN = document.getElementById("main-red-btn");
         function googleTranslateElementInit() {
             // Define the media query for mobile devices (max-width: 767px)
             var mediaQuery = window.matchMedia("(max-width: 767px)");
@@ -892,11 +893,9 @@
             function handleMediaQueryChange(mediaQuery) {
                 if (mediaQuery.matches) {
                     // Mobile devices
-                    console.log("running")
                     new google.translate.TranslateElement({ pageLanguage: 'en', gaTrack: 'bypass' }, "google_translate_mobile");
                 } else {
                     // Desktop devices
-                    console.log("running in desktop")
                     new google.translate.TranslateElement({ pageLanguage: 'en', gaTrack: 'bypass' }, "google_translate_not_mobile");
                 }
 

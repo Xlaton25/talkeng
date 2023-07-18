@@ -2488,6 +2488,9 @@ footer .copyright p a {
    .main-red-button-hover a, .main-red-button-hover a{
     border-radius: 0 !important;
    }
+   [data-animation-name="rubberBand"] {
+    animation-name: none;
+  }
 }
 
 .right-contents .feedeback {
