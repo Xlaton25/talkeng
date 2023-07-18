@@ -2484,6 +2484,12 @@ footer .copyright p a {
     }
 }
 
+@media only screen and (max-width: 992px) {
+   .main-red-button-hover a, .main-red-button-hover a{
+    border-radius: 0 !important;
+   }
+}
+
 .right-contents .feedeback {
     margin-top: 30px
 }
