@@ -75,11 +75,12 @@
         .goog-te-gadget,.bg-grey-new {
           background-color: #f7f7f7 !important;
         }
-        #targetLanguage{
+        .goog-te-gadget:first-child{
           height: 50px !important;
           text-align: center;
           display: flex;
           justify-content: center;
+          align-items: center;
         }
         .goog-te-gadget{
           height: 50px !important;
