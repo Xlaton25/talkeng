@@ -373,7 +373,7 @@ body {
 }
 
 .header-area .main-nav .nav {
-    float: right;
+    float: left;
     margin-top: 30px;
     margin-right: 0;
     background-color: transparent;
@@ -390,25 +390,25 @@ body {
     padding-right: 15px
 }
 
-.header-area .main-nav .nav li:last-child {
+.header-area .main-nav .nav li-css-last {
     padding-right: 0;
     padding-left: 40px
 }
 
-.header-area .main-nav .nav li:last-child a,
-.background-header .main-nav .nav li:last-child a {
+.header-area .main-nav .nav li-css-last a,
+.background-header .main-nav .nav li-css-last a {
     color: #fff !important;
     padding: 0 20px;
     font-weight: 400
 }
 
-.header-area .main-nav .nav li:last-child a:hover,
-.header-area .main-nav .nav li:last-child a.active {
+.header-area .main-nav .nav li-css-last a:hover,
+.header-area .main-nav .nav li-css-last a.active {
     color: #fff !important
 }
 
-.header-area .main-nav .nav li:last-child .main-red-button-hover a:hover,
-.background-header .main-nav .nav li:last-child .main-red-button-hover a:hover {
+.header-area .main-nav .nav li-css-last .main-red-button-hover a:hover,
+.background-header .main-nav .nav li-css-last .main-red-button-hover a:hover {
     background-color: #03a4ed !important;
     transform: scale3d(1.05,1.05,1.05);
     transition: .5s;
@@ -536,9 +536,7 @@ body {
     top: 23px
 }
 
-.header-area .main-nav .menu-trigger span,
-.header-area .main-nav .menu-trigger span:before,
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav .menu-trigger span {
     -moz-transition: all .4s;
     -o-transition: all .4s;
     -webkit-transition: all .4s;
@@ -657,8 +655,8 @@ body {
 }
 
 @media(max-width:992px) {
-    .header-area .main-nav .nav li:last-child,
-    .background-header .main-nav .nav li:last-child {
+    .header-area .main-nav .nav li-css-last,
+    .background-header .main-nav .nav li-css-last {
         display: none
     }
     .header-area .main-nav .nav li:nth-child(6),
@@ -695,8 +693,11 @@ body {
     .header-area .logo {
         margin-left: 30px
     }
-    .header-area .menu-trigger {
+    .header-area .menu-trigger,.d-block-in-mobile {
         display: block !important
+    }
+    .d-none-in-mobile{
+        display: none !important;
     }
     .header-area .main-nav {
         overflow: hidden
@@ -1850,7 +1851,7 @@ footer .footer-item ul li {
     margin-bottom: 12px
 }
 
-footer .footer-item ul li:last-child {
+footer .footer-item ul li-css-last {
     margin-bottom: 0
 }
 
@@ -2358,7 +2359,7 @@ footer .copyright p a {
     }
 }
 
-.course_details_left .course_list li:last-child {
+.course_details_left .course_list li-css-last {
     margin-bottom: 0
 }
 
@@ -2410,7 +2411,7 @@ footer .copyright p a {
     border-bottom: 1px solid #edeff2
 }
 
-.right-contents .sidebar_top ul li:last-child {
+.right-contents .sidebar_top ul li-css-last {
     border-bottom: 0 solid #edeff2
 }
 
@@ -2484,6 +2485,15 @@ footer .copyright p a {
     }
 }
 
+@media only screen and (max-width: 992px) {
+   .main-red-button-hover a, .main-red-button-hover a{
+    border-radius: 0 !important;
+   }
+   [data-animation-name="rubberBand"] {
+    animation-name: none;
+  }
+}
+
 .right-contents .feedeback {
     margin-top: 30px
 }
@@ -2539,3 +2549,5 @@ footer .copyright p a {
 .pricing-course {
     color: #03a4ed
 }
+
+/* for  */

@@ -34,35 +34,22 @@
     <meta name="og:url" content="https://talkengglobal.com/">
     <meta property="og:image" content="https://talkengglobal.com/assets/images/facebook_meta_image.jpeg">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css?v=12">
     <link rel="stylesheet" href="assets/css/pricing-talkeng.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/google-translate.css">
+    <link rel="stylesheet" href="assets/css/google-translate.css?v=1">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="assets\css\loading.css">
+
     <script src="https://kit.fontawesome.com/6f5382593f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="loader">
-        <div class="spinner">
-          <div class="double-bounce1"></div>
-          <div class="double-bounce2"></div>
-        </div>
-        <script>
-            var loader = document.getElementById("loader");
-            window.addEventListener("load", function() {
-              loader.style.display = "none";
-            });
-          </script>
-      </div> 
-      
     <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-        <div class="container">
+        <div class="container w-100" style="min-width:100vw !important">
             <div class="row">
                 <div class="col-12">
-                    <nav class="main-nav">
+                    <nav class="main-nav d-lg-flex col" style="justify-content:space-around">
 
                         <a href="index.html" class="logo">
                             <img src="assets/images/talkeng_main_logo.png" alt="talkeng logo"
@@ -75,15 +62,27 @@
                             <li class="scroll-to-section"><a href="talkeng-key-features.html">KEY FEATURES</a></li>
                             <li class="scroll-to-section"><a href="talkeng-apply-as-tutor.html">APPLY AS TUTOR</a></li>
                             <li class="scroll-to-section"><a href="talkeng-faq.html">FAQ</a></li>
-
-
                             <li class="scroll-to-section"><a href="https://olympiad.talkengglobal.com/">OLYMPIAD
                                     2023</a></li>
-                            <li class="scroll-to-section">
+                            <li class="scroll-to-section li-css-last d-none d-block-in-mobile">
                                 <div class="main-red-button-hover"><a
                                         href="https://play.google.com/store/apps/details?id=io.talkeng.app.global"
-                                        target="_blank" data-animation-name="rubberBand"
-                                        data-animation-duration="1200">Book A Trial</a></div>
+                                        target="_blank" 
+                                        class="main-red-button-hover pt-0 mt-0" id="main-red-btn">Book A Trial</a></div>
+                            </li>
+                            <li class="scroll-to-section d-none d-block-in-mobile">
+                                <div id="google_translate_mobile" class="google_translate_element bg-grey-new"></div>
+                            </li>
+                        </ul>
+                        <ul class="nav d-none-in-mobile">
+                            <li class="scroll-to-section li-css-last">
+                                <div class="main-red-button-hover"><a
+                                        href="https://play.google.com/store/apps/details?id=io.talkeng.app.global"
+                                        target="_blank" data-animation-name="rubberBand" data-animation-duration="1200"
+                                        class="main-red-button-hover pt-0 mt-0">Book A Trial</a></div>
+                            </li>
+                            <li class="scroll-to-section">
+                                <div id="google_translate_not_mobile" class="google_translate_element"></div>
                             </li>
                         </ul>
                         <a class="menu-trigger">
@@ -369,337 +368,333 @@
                     <!-- <div class="left-image wow fadeInLeft" data-wow-duration="3s" data-wow-delay="0.5s">
                         <img src="assets/images/teacherMobileLogosmall1.webp" alt="TalkEng android image">
                     </div> -->
-                    <div data-aos="fade-right"  data-aos-duration="1000" data-aos-easing="ease-in-sine" class="left-image">
+                    <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine"
+                        class="left-image">
                         <img src="assets/images/teacherMobileLogosmall1.webp" alt="TalkEng android image">
                     </div>
-                   
+
                 </div>
-                    <div class="col-lg-6 align-self-center"  data-aos="fade-left"  data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                        <div class="section-heading">
-                            <h6>Join TalkEng</h6>
-                            <h2>Download <em>TalkEng on your android</em> phone &<span> get started now!</span></h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="about-item">
-                                    <h4>100k+</h4>
-                                    <h6>Downloads</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="about-item">
-                                    <h4>4.7+</h4>
-                                    <h6>Ratings</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                                <div class="about-item">
-                                    <h4>1000+</h4>
-                                    <h6>reviews</h6>
-                                </div>
+                <div class="col-lg-6 align-self-center" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine">
+                    <div class="section-heading">
+                        <h6>Join TalkEng</h6>
+                        <h2>Download <em>TalkEng on your android</em> phone &<span> get started now!</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="about-item">
+                                <h4>100k+</h4>
+                                <h6>Downloads</h6>
                             </div>
                         </div>
-                        <p><a rel="nofollow"
-                                href="https://play.google.com/store/apps/details?id=io.talkeng.app.global">TalkEng</a>
-                            is a
-                            one-stop solution that provides accent-neutral English- speaking partner according to your
-                            preference to practice daily using
-                            a live environment through 1-on-1 sessions for those who want to speak fluently in English.
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="about-item">
+                                <h4>4.7+</h4>
+                                <h6>Ratings</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <div class="about-item">
+                                <h4>1000+</h4>
+                                <h6>reviews</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <p><a rel="nofollow"
+                            href="https://play.google.com/store/apps/details?id=io.talkeng.app.global">TalkEng</a>
+                        is a
+                        one-stop solution that provides accent-neutral English- speaking partner according to your
+                        preference to practice daily using
+                        a live environment through 1-on-1 sessions for those who want to speak fluently in English.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=io.talkeng.app.global">
+                        <div class="main-green-button"> <img src="assets/images/google-play-store-8-1-73-apk.png"
+                                alt="TalkEng user testimonial" style="max-height: 100px; max-width:175px;"> </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div id="portfolio" class="our-portfolio section">
+        <div class="portfolio-left-dec">
+            <img src="assets/images/portfolio-left-dec.png" alt>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>How Our <em>Previous</em> Learners Feel <span>About Us</span></h2>
+                        <span>customer reviews</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-portfolio">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/images/review_one.webp" alt="TalkEng user testimonial" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/images/review_seven.webp" alt="TalkEng user testimonial"
+                                    loading="lazy">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/images/review_two.webp" alt="TalkEng user testimonial" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/images/review_three.webp" alt="TalkEng user testimonial"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/images/review_four.webp" alt="TalkEng user testimonial" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/images/review_five.webp" alt="TalkEng user testimonial" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/images/review_six.webp" alt="TalkEng user testimonial" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <section class="price_plan_area section_padding_130_80" id="pricing">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <h6>Pricing Plans</h6>
+                        <h3>Let's find a way together</h3>
+                        <p>Specialized Plans tailored to your needs
                         </p>
-                        <a href="https://play.google.com/store/apps/details?id=io.talkeng.app.global">
-                            <div class="main-green-button"> <img src="assets/images/google-play-store-8-1-73-apk.png"
-                                    alt="TalkEng user testimonial" style="max-height: 100px; max-width:175px;"> </div>
-                        </a>
-
+                        <div class="line"></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br><br>
-        <div id="portfolio" class="our-portfolio section">
-            <div class="portfolio-left-dec">
-                <img src="assets/images/portfolio-left-dec.png" alt>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="section-heading">
-                            <h2>How Our <em>Previous</em> Learners Feel <span>About Us</span></h2>
-                            <span>customer reviews</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="owl-carousel owl-portfolio">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/images/review_one.webp" alt="TalkEng user testimonial"
-                                        loading="lazy">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/images/review_seven.webp" alt="TalkEng user testimonial"
-                                        loading="lazy">
-
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/images/review_two.webp" alt="TalkEng user testimonial"
-                                        loading="lazy">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/images/review_three.webp" alt="TalkEng user testimonial"
-                                        loading="lazy">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/images/review_four.webp" alt="TalkEng user testimonial"
-                                        loading="lazy">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/images/review_five.webp" alt="TalkEng user testimonial"
-                                        loading="lazy">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/images/review_six.webp" alt="TalkEng user testimonial"
-                                        loading="lazy">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <br><br>
-        <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
-        <section class="price_plan_area section_padding_130_80" id="pricing">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-lg-6">
-                        <div class="section-heading text-center wow fadeInUp" data-wow-delay="0.2s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                            <h6>Pricing Plans</h6>
-                            <h3>Let's find a way together</h3>
-                            <p>Specialized Plans tailored to your needs
-                            </p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="single_price_plan wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="title">
+                            <h3>Trial Session</h3>
+                            <p>Start a trial</p>
                             <div class="line"></div>
                         </div>
+                        <div class="price">
+                            <h4><b>₹29</b></h4>
+                        </div>
+                        <div class="description">
+                            <p><i class="lni lni-checkmark-circle"></i>Select a tutor as per your preference</p>
+                            <p><i class="lni lni-checkmark-circle"></i>Select either Basic or Premium tutor</p>
+                            <p><i class="lni lni-checkmark-circle"></i>Personalized feedback and support</p>
+                            <p><i class="lni lni-close"></i>Book International tutor</p>
+                            <p><i class="lni lni-close"></i>Enjoy prioritized tutor booking with a unique PIN</p>
+                        </div>
+                        <div class="button"><a class="btn btn-success btn-2" href="https://rzp.io/l/b2bgu74TPX">Get
+                                Started</a></div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                        <div class="single_price_plan wow fadeInUp" data-wow-delay="0.2s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                            <div class="title">
-                                <h3>Trial Session</h3>
-                                <p>Start a trial</p>
-                                <div class="line"></div>
-                            </div>
-                            <div class="price">
-                                <h4><b>₹29</b></h4>
-                            </div>
-                            <div class="description">
-                                <p><i class="lni lni-checkmark-circle"></i>Select a tutor as per your preference</p>
-                                <p><i class="lni lni-checkmark-circle"></i>Select either Basic or Premium tutor</p>
-                                <p><i class="lni lni-checkmark-circle"></i>Personalized feedback and support</p>
-                                <p><i class="lni lni-close"></i>Book International tutor</p>
-                                <p><i class="lni lni-close"></i>Enjoy prioritized tutor booking with a unique PIN</p>
-                            </div>
-                            <div class="button"><a class="btn btn-success btn-2" href="https://rzp.io/l/b2bgu74TPX">Get
-                                    Started</a></div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="single_price_plan active wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="side-shape"><img src="https://bootdey.com/img/popular-pricing.png" alt></div>
+                        <div class="title"><span>Popular</span>
+                            <h3>Basic Video Plan</h3>
+                            <p>For Every Beginners</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="price">
+                            <h4><b>₹4970</b></h4> &nbsp; <em><s>₹7100</s></em>
+                        </div>
+                        <div class="description">
+                            <p><i class="lni lni-checkmark-circle"></i>Unlimited Validity</p>
+                            <p><i class="lni lni-checkmark-circle"></i>Take Multiple Session in a Day</p>
+                            <p><i class="lni lni-checkmark-circle"></i>Random tutor selection</p>
+                            <p><i class="lni lni-checkmark-circle"></i>Personalized feedback and support</p>
+                            <p><i class="lni lni-close"></i>Select a tutor as per your preference</p>
+                            <p><i class="lni lni-close"></i>Book premium tutor</p>
+                            <p><i class="lni lni-close"></i>Enjoy prioritized tutor booking with a unique PIN</p>
+                            <p><i class="lni lni-close"></i>Book International tutor</p>
+                        </div>
+                        <div class="button"><a class="btn btn-warning" href="https://rzp.io/l/z5LhzAjWg">Get
+                                Started</a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                        <div class="single_price_plan active wow fadeInUp" data-wow-delay="0.2s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                            <div class="side-shape"><img src="https://bootdey.com/img/popular-pricing.png" alt></div>
-                            <div class="title"><span>Popular</span>
-                                <h3>Basic Video Plan</h3>
-                                <p>For Every Beginners</p>
-                                <div class="line"></div>
-                            </div>
-                            <div class="price">
-                                <h4><b>₹4970</b></h4> &nbsp; <em><s>₹7100</s></em>
-                            </div>
-                            <div class="description">
-                                <p><i class="lni lni-checkmark-circle"></i>Unlimited Validity</p>
-                                <p><i class="lni lni-checkmark-circle"></i>Take Multiple Session in a Day</p>
-                                <p><i class="lni lni-checkmark-circle"></i>Random tutor selection</p>
-                                <p><i class="lni lni-checkmark-circle"></i>Personalized feedback and support</p>
-                                <p><i class="lni lni-close"></i>Select a tutor as per your preference</p>
-                                <p><i class="lni lni-close"></i>Book premium tutor</p>
-                                <p><i class="lni lni-close"></i>Enjoy prioritized tutor booking with a unique PIN</p>
-                                <p><i class="lni lni-close"></i>Book International tutor</p>
-                            </div>
-                            <div class="button"><a class="btn btn-warning" href="https://rzp.io/l/z5LhzAjWg">Get
-                                    Started</a>
-                            </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="single_price_plan wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="title">
+                            <h3>Premium Video Plan</h3>
+                            <p>Unlimited Possibilities</p>
+                            <div class="line"></div>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                        <div class="single_price_plan wow fadeInUp" data-wow-delay="0.2s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                            <div class="title">
-                                <h3>Premium Video Plan</h3>
-                                <p>Unlimited Possibilities</p>
-                                <div class="line"></div>
-                            </div>
-                            <div class="price">
-                                <h4><b>₹7700</b></h4> &nbsp; <em><s>₹11000</s></em>
-                            </div>
-                            <div class="description">
-                                <p><i class="lni lni-checkmark-circle"></i>All the features available on Basic Video</p>
-                                <p><i class="lni lni-checkmark-circle"></i>Select a tutor as per your preference</p>
-                                <p><i class="lni lni-checkmark-circle"></i>Book premium tutor</p>
-                                <p><i class="lni lni-checkmark-circle"></i>Personalized feedback and support</p>
-                                <p><i class="lni lni-checkmark-circle"></i>Book International tutor</p>
-                                <p><i class="lni lni-checkmark-circle"></i>Enjoy prioritized tutor booking with a unique
-                                    PIN
-                                </p>
-                                <p><i class="lni lni-checkmark-circle"></i>100% Money-Back Guarantee for 168 sessions
-                                </p>
-                            </div>
-                            <div class="button"><a class="btn btn-info" href="https://rzp.io/l/AcbUtkw">Get Started</a>
-                            </div>
+                        <div class="price">
+                            <h4><b>₹7700</b></h4> &nbsp; <em><s>₹11000</s></em>
+                        </div>
+                        <div class="description">
+                            <p><i class="lni lni-checkmark-circle"></i>All the features available on Basic Video</p>
+                            <p><i class="lni lni-checkmark-circle"></i>Select a tutor as per your preference</p>
+                            <p><i class="lni lni-checkmark-circle"></i>Book premium tutor</p>
+                            <p><i class="lni lni-checkmark-circle"></i>Personalized feedback and support</p>
+                            <p><i class="lni lni-checkmark-circle"></i>Book International tutor</p>
+                            <p><i class="lni lni-checkmark-circle"></i>Enjoy prioritized tutor booking with a unique
+                                PIN
+                            </p>
+                            <p><i class="lni lni-checkmark-circle"></i>100% Money-Back Guarantee for 168 sessions
+                            </p>
+                        </div>
+                        <div class="button"><a class="btn btn-info" href="https://rzp.io/l/AcbUtkw">Get Started</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <div id="video" class="our-videos section">
-            <div class="videos-left-dec">
-                <img src="assets/images/videos-left-dec.png" alt>
-            </div>
-            <div class="videos-right-dec">
-                <img src="assets/images/videos-right-dec.png" alt>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="naccs">
-                            <div class="grid">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <ul class="nacc">
-                                            <li class="active">
-                                                <div>
-                                                    <div class="thumb">
-                                                        <iframe width="100%" height="auto"
-                                                            src="https://www.youtube.com/embed/60uowA9z2uU"
-                                                            title="YouTube video player" frameborder="0"
-                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                            allowfullscreen></iframe>
-                                                        <div class="overlay-effect">
-                                                            <a href="#">
-                                                                <h4>Learner Testimonial</h4>
-                                                            </a>
-                                                            <span>By Miss Supriya</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <div class="thumb">
-                                                        <iframe width="100%" height="auto"
-                                                            src="https://www.youtube.com/embed/F-i__KdAvgk"
-                                                            title="YouTube video player" frameborder="0"
-                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                            allowfullscreen></iframe>
-                                                        <div class="overlay-effect">
-                                                            <a href="#">
-                                                                <h4>Learner Testimonial</h4>
-                                                            </a>
-                                                            <span>By the people of Aurangabad</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <div class="thumb">
-                                                        <iframe width="100%" height="auto"
-                                                            src="https://www.youtube.com/embed/8k4RMCaGpxQ"
-                                                            title="YouTube video player" frameborder="0"
-                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                            allowfullscreen></iframe>
-                                                        <div class="overlay-effect">
-                                                            <a href="#">
-                                                                <h4>Learner Testimonial</h4>
-                                                            </a>
-                                                            <span>By Subham Sharma</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <div class="thumb">
-                                                        <iframe width="100%" height="auto"
-                                                            src="https://www.youtube.com/embed/VGy4QyekJOQ"
-                                                            title="YouTube video player" frameborder="0"
-                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                            allowfullscreen></iframe>
-                                                        <div class="overlay-effect">
-                                                            <a href="#">
-                                                                <h4>Learner Testimonial</h4>
-                                                            </a>
-                                                            <span>By Kohilika Saha</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="menu">
-                                            <div class="active">
+        </div>
+    </section>
+    <div id="video" class="our-videos section">
+        <div class="videos-left-dec">
+            <img src="assets/images/videos-left-dec.png" alt>
+        </div>
+        <div class="videos-right-dec">
+            <img src="assets/images/videos-right-dec.png" alt>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="naccs">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <ul class="nacc">
+                                        <li class="active">
+                                            <div>
                                                 <div class="thumb">
-                                                    <img src="assets/images/video_back1.webp" alt="TalkEng Testimonial">
-                                                    <div class="inner-content">
-                                                        <h4>Learner Testimonial</h4>
+                                                    <iframe width="100%" height="auto"
+                                                        src="https://www.youtube.com/embed/60uowA9z2uU"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen></iframe>
+                                                    <div class="overlay-effect">
+                                                        <a href="#">
+                                                            <h4>Learner Testimonial</h4>
+                                                        </a>
                                                         <span>By Miss Supriya</span>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </li>
+                                        <li>
                                             <div>
                                                 <div class="thumb">
-                                                    <img src="assets/images/video_back2.webp" alt="TalkEng Testimonial">
-                                                    <div class="inner-content">
-                                                        <h4>Learner Testimonial </h4>
+                                                    <iframe width="100%" height="auto"
+                                                        src="https://www.youtube.com/embed/F-i__KdAvgk"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen></iframe>
+                                                    <div class="overlay-effect">
+                                                        <a href="#">
+                                                            <h4>Learner Testimonial</h4>
+                                                        </a>
                                                         <span>By the people of Aurangabad</span>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </li>
+                                        <li>
                                             <div>
                                                 <div class="thumb">
-                                                    <img src="assets/images/video_back3.webp" alt="TalkEng Testimonial">
-                                                    <div class="inner-content">
-                                                        <h4>Learner Testimonial</h4>
+                                                    <iframe width="100%" height="auto"
+                                                        src="https://www.youtube.com/embed/8k4RMCaGpxQ"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen></iframe>
+                                                    <div class="overlay-effect">
+                                                        <a href="#">
+                                                            <h4>Learner Testimonial</h4>
+                                                        </a>
                                                         <span>By Subham Sharma</span>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </li>
+                                        <li>
                                             <div>
                                                 <div class="thumb">
-                                                    <img src="assets/images/video_back4.webp" alt="TalkEng Testimonial">
-                                                    <div class="inner-content">
-                                                        <h4>Learner Testimonial</h4>
+                                                    <iframe width="100%" height="auto"
+                                                        src="https://www.youtube.com/embed/VGy4QyekJOQ"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen></iframe>
+                                                    <div class="overlay-effect">
+                                                        <a href="#">
+                                                            <h4>Learner Testimonial</h4>
+                                                        </a>
                                                         <span>By Kohilika Saha</span>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="menu">
+                                        <div class="active">
+                                            <div class="thumb">
+                                                <img src="assets/images/video_back1.webp" alt="TalkEng Testimonial">
+                                                <div class="inner-content">
+                                                    <h4>Learner Testimonial</h4>
+                                                    <span>By Miss Supriya</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <img src="assets/images/video_back2.webp" alt="TalkEng Testimonial">
+                                                <div class="inner-content">
+                                                    <h4>Learner Testimonial </h4>
+                                                    <span>By the people of Aurangabad</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <img src="assets/images/video_back3.webp" alt="TalkEng Testimonial">
+                                                <div class="inner-content">
+                                                    <h4>Learner Testimonial</h4>
+                                                    <span>By Subham Sharma</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="thumb">
+                                                <img src="assets/images/video_back4.webp" alt="TalkEng Testimonial">
+                                                <div class="inner-content">
+                                                    <h4>Learner Testimonial</h4>
+                                                    <span>By Kohilika Saha</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -711,106 +706,106 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br><br>
-        <div id="portfolio" class="our-portfolio section">
-            <div class="portfolio-left-dec">
-                <img src="assets/images/portfolio-left-dec.png" alt>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="section-heading">
-                            <h2>Our Recent <span>Clients</span> <br> &amp; <em>Partners</em> </h2>
-                            <span>Our Partners</span>
-                        </div>
+    </div>
+    <br>
+    <br><br>
+    <div id="portfolio" class="our-portfolio section">
+        <div class="portfolio-left-dec">
+            <img src="assets/images/portfolio-left-dec.png" alt>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Our Recent <span>Clients</span> <br> &amp; <em>Partners</em> </h2>
+                        <span>Our Partners</span>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="owl-carousel owl-portfolio">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="https://thevac.co/" target="_blank">
-                                        <img src="assets/images/viridian.jpg" alt="Viridian Accelerator Center"
-                                            loading="lazy"></a>
-                                </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="owl-carousel owl-portfolio">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="https://thevac.co/" target="_blank">
+                                    <img src="assets/images/viridian.jpg" alt="Viridian Accelerator Center"
+                                        loading="lazy"></a>
                             </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="https://www.supremeincubator.com/" target="_blank">
-                                        <img src="assets/images/sup_1.jpg" alt="Supreme Incubator" loading="lazy"></a>
-                                </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="https://www.supremeincubator.com/" target="_blank">
+                                    <img src="assets/images/sup_1.jpg" alt="Supreme Incubator" loading="lazy"></a>
                             </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="https://www.kuberanshouse.com/" target="_blank">
-                                        <img src="assets/images/kub_1.jpg" alt="Kuberans House" loading="lazy"></a>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="https://www.kuberanshouse.com/" target="_blank">
+                                    <img src="assets/images/kub_1.jpg" alt="Kuberans House" loading="lazy"></a>
 
-                                </div>
                             </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="https://www.insyssky.com/" target="_blank">
-                                        <img src="assets/images/insyss_1.jpg" alt="Insyssky" loading="lazy"></a>
-                                </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="https://www.insyssky.com/" target="_blank">
+                                    <img src="assets/images/insyss_1.jpg" alt="Insyssky" loading="lazy"></a>
                             </div>
+                        </div>
 
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="https://startup.tripura.gov.in/" target="_blank">
-                                        <img src="assets/images/startup_new.jpg" alt="Startup Tripura"
-                                            loading="lazy"></a>
-                                </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="https://startup.tripura.gov.in/" target="_blank">
+                                    <img src="assets/images/startup_new.jpg" alt="Startup Tripura" loading="lazy"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <br><br>
-        <section class="price_plan_area section_padding_130_80" id="pricing"
-            style="background-color: #d9e6fb; padding: 20px; opacity: 10px;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-lg-6">
-                        <div class="section-heading text-center wow fadeInUp" data-wow-delay="0.2s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                            <h6 style="color: rgb(72, 72, 72);">About</h6>
-                            <h3><b>Our Company</b></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-10 col-md-10 col-lg-10" style="text-align: justify;">
-                        The vision of TalkEng is to be a leading provider of high-quality online English language
-                        learning
-                        services. We strive to create a learning platform that is accessible to anyone, anywhere in the
-                        world, and that helps learners achieve their language goals
-                        through personalized and effective teaching methods.
-                        <br><br> We believe that effective communication skills are essential for success in today's
-                        globalized world, and we aim to empower individuals with the tools and skills they need to
-                        achieve
-                        their professional and personal goals.
-                        Our vision is to create a community of learners who are confident and proficient in spoken
-                        English,
-                        and who can communicate effectively in a variety of real-life situations.
-                        <br><br> We aim to continually improve and innovate our services, staying up to date with the
-                        latest
-                        trends and developments in online learning. Our vision is to create a learning environment that
-                        is
-                        engaging, interactive, and fun,
-                        where learners can feel comfortable and confident in their language skills.
-                        <br><br> Ultimately, our vision is to help individuals break down language barriers and connect
-                        with
-                        others around the world, creating a more connected and global community.
+    </div>
+    <br><br>
+    <section class="price_plan_area section_padding_130_80" id="pricing"
+        style="background-color: #d9e6fb; padding: 20px; opacity: 10px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <h6 style="color: rgb(72, 72, 72);">About</h6>
+                        <h3><b>Our Company</b></h3>
                     </div>
                 </div>
             </div>
-    </div>
-    </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-10 col-lg-10" style="text-align: justify;">
+                    The vision of TalkEng is to be a leading provider of high-quality online English language
+                    learning
+                    services. We strive to create a learning platform that is accessible to anyone, anywhere in the
+                    world, and that helps learners achieve their language goals
+                    through personalized and effective teaching methods.
+                    <br><br> We believe that effective communication skills are essential for success in today's
+                    globalized world, and we aim to empower individuals with the tools and skills they need to
+                    achieve
+                    their professional and personal goals.
+                    Our vision is to create a community of learners who are confident and proficient in spoken
+                    English,
+                    and who can communicate effectively in a variety of real-life situations.
+                    <br><br> We aim to continually improve and innovate our services, staying up to date with the
+                    latest
+                    trends and developments in online learning. Our vision is to create a learning environment that
+                    is
+                    engaging, interactive, and fun,
+                    where learners can feel comfortable and confident in their language skills.
+                    <br><br> Ultimately, our vision is to help individuals break down language barriers and connect
+                    with
+                    others around the world, creating a more connected and global community.
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
     </section>
     <div class="footer-dec">
         <img src="assets/images/footer-dec.png" alt>
@@ -885,15 +880,37 @@
                 </div>
             </div>
     </footer>
-
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
+    <script>
+        var mainRedBTN = document.getElementById("main-red-btn");
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'en', gaTrack: 'bypass' }, 'google_translate_element');
+            // Define the media query for mobile devices (max-width: 767px)
+            var mediaQuery = window.matchMedia("(max-width: 767px)");
+
+            // Get a reference to the element
+            var element = document.getElementById("myElement");
+
+            // Function to handle media query changes
+            function handleMediaQueryChange(mediaQuery) {
+                if (mediaQuery.matches) {
+                    // Mobile devices
+                    new google.translate.TranslateElement({ pageLanguage: 'en', gaTrack: 'bypass' }, "google_translate_mobile");
+                } else {
+                    // Desktop devices
+                    new google.translate.TranslateElement({ pageLanguage: 'en', gaTrack: 'bypass' }, "google_translate_not_mobile");
+                }
+
+            }
+
+            // Initial check
+            handleMediaQueryChange(mediaQuery);
+
+            // Add a listener for media query changes
+            mediaQuery.addListener(handleMediaQueryChange);
         }
     </script>
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
     <script src="assets/js/jquery.min.js"></script>
@@ -903,16 +920,6 @@
 
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/script.js"></script>
-    <!-- javascript for google translate  -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <!-- javascript for google translate  -->
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
