@@ -60,8 +60,14 @@
         /* color:#383ffa; */
         font-weight: bold;
         border: none;
-        border-radius: 3px;
+        border-radius: 5px;
         padding: 6px 8px
+      }
+
+      .google_translate_element select:hover{
+        background-color: #13aaf0dd;
+        transform: scale3d(1.03,1.03,1.03);
+        transition: .4s;
       }
 
       /* design code ends  */
