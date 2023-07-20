@@ -114,6 +114,7 @@ li {
 
 body {
     overflow-x: hidden;
+    top: unset !important;
 }
 
 header,
