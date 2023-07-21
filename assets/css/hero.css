@@ -3,7 +3,7 @@
 
 }
 .hcontainer{
-    max-width: 1140px;
+    /* max-width: 1140px; */
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -39,24 +39,27 @@ a{
     padding-right: 30px;
     
 }
-#hero-banner{
+#hhero-banner{
     width: 100%;
     height: 80vh;
     padding: 50px;
+    /* margin-top: 100px; */
+    /* margin-bottom: 50px; */
 }
-#hero-banner h1{
+#hhero-banner h1{
     font-size: 70px;
     font-weight: 500;
     line-height: 70px;
     margin: 0 0 10px 0;
     color: #3e4450;
+    /* margin-bottom: 1%; */
 }
 
-#hero-banner h1 span{
+#hhero-banner h1 span{
     font-weight: 700;
 }
 
-#hero-banner h2{
+#hhero-banner h2{
     font-size: 24px;
     font-weight: 500;
     margin: 10 0 50px 0;
@@ -64,12 +67,12 @@ a{
     padding-bottom: 30px;
 }
 
-#hero-banner .button-wrapper{
+#hhero-banner .button-wrapper{
     display: flex;
     align-items: center;
 }
 
-#hero-banner .btn-get-started{
+#hhero-banner .btn-get-started{
     font-size: 16px;
     display: inline-block;
     letter-spacing: 1px;
@@ -77,19 +80,19 @@ a{
     border: 1px solid rgb(241 63 71);
     color: #fff;
     padding: 10px 30px 12px 30px;
-    border-radius: 4px;
+    border-radius: 30px;
     box-shadow: 0 8px 28px rgba(195, 0, 91, 0.6);
     transition: all 0.3s ease-in-out;
 }
 
-#hero-banner .btn-get-started:hover{
+#hhero-banner .btn-get-started:hover{
     background-color: #206bfb;
     /* color: rgb(238, 39, 129); */
     border: 1px solid #206bfb;
     box-shadow: 0 8px 28px rgba(0, 185, 195, 0.6);
 }
 
-#hero-banner .btn-play-store{
+#hhero-banner .btn-play-store{
     margin-left: 25px;
     font-size: 16px;
     color: #04a6f7;
@@ -101,21 +104,21 @@ a{
     
     /* letter-spacing: 1px;
     border: 1px solid #206bfb;
-     color: #206bfb;
+    color: #206bfb;
     border-radius: 4px;
     box-shadow: 0 8px 28px rgba(0, 185, 195, 0.6); */
 }
 
-#hero-banner .btn-play-store i{
+#hhero-banner .btn-play-store i{
     font-size: 45px;
     padding-right: 10px;
 }
 
-#hero-banner .btn-play-store:hover{
+#hhero-banner .btn-play-store:hover{
     color: #62c1eedd;
     /* color: #13aaf0dd; */
 }
-#hero-banner .animated{
+#hhero-banner .animated{
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 @keyframes up-down{
@@ -134,22 +137,25 @@ a{
     .hrow{
         flex-direction: column-reverse;
     }
-    #hero-banner .animated{
+    #hhero-banner .img-fluid{
+        margin-top: 50px auto;
+    }
+    #hhero-banner .animated{
         animation: none;
     }
-    #hero-banner{
+    #hhero-banner{
         padding-top: 30px;
     }
-    #hero-banner h1{
+    #hhero-banner h1{
        margin-top: 20px;
     }
-    #hero-banner h2{
+    #hhero-banner h2{
         font-size: 20px;
     }
     #hero-banner .button-wrapper{
         flex-direction: column;
     }
-    #hero-banner .btn-play-store{
+    #hhero-banner .btn-play-store{
         margin-left: 0;
         margin-top: 15px;
         margin-bottom: 15px;
