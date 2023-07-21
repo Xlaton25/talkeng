@@ -810,14 +810,20 @@ body {
     .header-area .main-nav .nav li.submenu:focus ul {
         height: 0
     }
+    
 }
 
 @media(min-width:1199px) {
-    .header-area .main-nav .nav {
-        display: flex !important
+    .header-area .main-nav .nav{
+        display: flex !important;
     }
 }
 
+@media (min-width: 992px){
+.d-lg-flex {
+    display: flex !important;
+}
+}
 .js-preloader {
     position: fixed;
     top: 0;
