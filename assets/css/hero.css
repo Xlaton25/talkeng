@@ -144,7 +144,9 @@ a{
         animation: none;
     }
     #hhero-banner{
-        padding-top: 30px;
+        padding-top: 100px;
+        margin-bottom: 50px;
+        /* padding-bottom: 50px; */
     }
     #hhero-banner h1{
        margin-top: 20px;
@@ -160,5 +162,12 @@ a{
         margin-left: 0;
         margin-top: 15px;
         margin-bottom: 15px;
+        /* padding-left: 15px; */
+    }
+    .our-services{
+        /* padding-top: 50px;
+        padding-bottom: 50px; */
+        position: relative;
+        margin-top: 150px;
     }
 }
