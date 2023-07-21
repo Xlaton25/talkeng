@@ -79,11 +79,11 @@ a{
     padding: 10px 30px 12px 30px;
     border-radius: 4px;
     box-shadow: 0 8px 28px rgba(195, 0, 91, 0.6);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #hero-banner .btn-get-started:hover{
-    background-color: #04a6f7;
+    background-color: #206bfb;
     /* color: rgb(238, 39, 129); */
     border: 1px solid #206bfb;
     box-shadow: 0 8px 28px rgba(0, 185, 195, 0.6);
