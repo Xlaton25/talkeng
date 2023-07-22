@@ -1055,7 +1055,7 @@ body {
 .our-services {
     position: relative;
     margin-top: 0;
-    padding-top: 120px
+    /* padding-top: 120px */
 }
 
 .our-services .section-heading {
