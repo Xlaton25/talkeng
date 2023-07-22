@@ -1077,14 +1077,20 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, .05)
 }
 
-/* .our-services .item:hover{
+.our-services .item:hover{
     background: #f2f1f1;
-    box-shadow: 0 0 5px rgba(203, 19, 19, 0.915);
+    /* box-shadow: 0 0 5px rgba(203, 19, 19, 0.915); */
+    border: 5px solid;
+    border-image: repeating-linear-gradient(135deg, #f13f47 0 10px, #df4a0f 0 20px) 8;
+    -webkit-mask:
+    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
     transform: scale3d(1.02,1.02,1.02);
-    transition: .5s;
-} */
+    transition: 1s;
+}
 
-.our-services .item:hover {
+/* .our-services .item:hover {
     border: 8px solid;
     border-image: repeating-linear-gradient(135deg, #F8CA00 0 10px, #ff695f 0 20px) 8;
     -webkit-mask:
@@ -1092,7 +1098,7 @@ body {
         conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat,
         linear-gradient(#000 0 0) padding-box no-repeat;
     transition: .5s, -webkit-mask-position .3s .3s;
-}
+} */
 
 .our-services .item :hover {
     --_i: 100%;
