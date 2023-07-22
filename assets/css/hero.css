@@ -49,7 +49,7 @@ a{
 #hhero-banner h1{
     font-size: 3vw;
     font-weight: bolder;
-    line-height: 70px;
+    line-height: 50px;
     margin: 0 0 10px 0;
     color: #03a4ed;
     /* margin-bottom: 1%; */
@@ -63,9 +63,9 @@ a{
 #hhero-banner p{
     font-size: 24px;
     font-weight: 500;
-    margin: 10 0 50px 0;
+    /* margin: 10px 0 50px 0; */
     color: #858ea1;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #hhero-banner .button-wrapper{
@@ -123,7 +123,10 @@ a{
     font-size: 45px;
     padding-right: 20px;
 }
-
+.pr{
+    padding-right: 0px;
+    
+}
 #hhero-banner .btn-play-store:hover{
     background-color: rgb(57, 57, 57);
     transform: scale3d(1.03,1.03,1.03);
@@ -150,7 +153,8 @@ a{
         flex-direction: column-reverse;
     }
     #hhero-banner .img-fluid{
-        margin-top: 50px auto;
+        margin-top: 50px ;
+    
     }
     #hhero-banner .animated{
         animation: none;
