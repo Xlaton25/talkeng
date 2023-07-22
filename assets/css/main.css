@@ -2590,11 +2590,6 @@ footer .copyright p a {
 
 @media only screen and (max-width: 992px) {
 
-    .main-red-button-hover a,
-    .main-red-button-hover a {
-        border-radius: 0 !important;
-    }
-
     [data-animation-name="rubberBand"] {
         animation-name: none;
     }
