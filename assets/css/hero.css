@@ -91,18 +91,23 @@ a{
     /* color: rgb(238, 39, 129); */
     border: 1px solid #206bfb;
     box-shadow: 0 8px 28px rgba(0, 185, 195, 0.6);
+    transform: scale3d(1.03,1.03,1.03);
+
 }
 
 #hhero-banner .btn-play-store{
     margin-left: 25px;
     font-size: 16px;
-    color: #04a6f7;
-    padding: 8px 20px 8px 20px;
+    color: #fff;
+    padding: 10px 30px 12px 30px;
     display: inline-flex;
     align-items: center;
-    transition: all 0.25s ease-in-out;
-    
-    
+    background-color: black;
+    padding-left: 10px;
+    border-radius: 30px;
+    box-shadow: 0 8px 28px rgba(23, 23, 23, 0.6);
+    transition: all 0.3s ease-in-out;
+
     /* letter-spacing: 1px;
     border: 1px solid #206bfb;
     color: #206bfb;
@@ -110,13 +115,19 @@ a{
     box-shadow: 0 8px 28px rgba(0, 185, 195, 0.6); */
 }
 
+#hhero-banner .btn-play-store img{
+    width: 25px;
+    padding-right: 5px;
+}
 #hhero-banner .btn-play-store i{
     font-size: 45px;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 #hhero-banner .btn-play-store:hover{
-    color: #62c1eedd;
+    background-color: rgb(57, 57, 57);
+    transform: scale3d(1.03,1.03,1.03);
+    box-shadow: 0 8px 28px rgba(56, 56, 56, 0.6);
     /* color: #13aaf0dd; */
 }
 #hhero-banner .animated{
