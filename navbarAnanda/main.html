@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Bar </title>
+    <link rel="stylesheet" href="/navbarAnanda/navstyle.css">
+     <!--  Boxicons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+ 
+<body>
+    
+    <!-- HEADER -->
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="/assets/images/talkeng_main_logo.png" alt="">
+    
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid" id="nav-link">
+            <button id="hamburger" aria-expanded="false">
+                <i class="bx bx-menu" aria-hidden="true"></i>
+              </button>
+          
+            <ul class="navbar">
+                <li><a href="#" class="nav-btn active">Home<span></span></a></li>
+                <li><a href="#" class="nav-btn">KEY FEATURES<span></span></a></li>
+                <li><a href="#" class="nav-btn">APPLY AS TUTOR<span></span></a></li>
+                <li><a href="#" class="nav-btn">FAQ<span></span></a></li>
+                <li><a href="#" class="nav-btn">OLYMPIAD 2023<span></span></a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="navbar-btn">Book A Trial</button>
+            <button onclick="myFunction()" class="darkmode-btn">         
+                <i class='bx bx-sun change-theme' id="theme-button"></i>
+
+            </button>
+            
+        </div>
+    </header>
+    <script src="/navbarAnanda/navbar.js"></script>
+</body>
+ 
+</html>
