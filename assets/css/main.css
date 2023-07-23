@@ -1055,7 +1055,7 @@ body {
 .our-services {
     position: relative;
     margin-top: 0;
-    padding-top: 120px
+    /* padding-top: 120px */
 }
 
 .our-services .section-heading {
@@ -2589,11 +2589,6 @@ footer .copyright p a {
 }
 
 @media only screen and (max-width: 992px) {
-
-    .main-red-button-hover a,
-    .main-red-button-hover a {
-        border-radius: 0 !important;
-    }
 
     [data-animation-name="rubberBand"] {
         animation-name: none;
