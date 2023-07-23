@@ -148,9 +148,13 @@ a{
 @media(max-width:768px){
     .hcontainer{
         max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     .hrow{
         flex-direction: column-reverse;
+        padding-right: 0;
+        padding-left: 0;
     }
     #hhero-banner .img-fluid{
         margin-top: 50px ;
