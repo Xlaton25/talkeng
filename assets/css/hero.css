@@ -162,6 +162,8 @@ a{
     #hhero-banner{
         padding-top: 100px;
         margin-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
         /* padding-bottom: 50px; */
     }
     #hhero-banner h1{
