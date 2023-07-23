@@ -57,7 +57,7 @@ a{
 
 
 #hhero-banner h1 span{
-    color: #f13f47;
+    /* color: #f13f47; */
 }
 
 #hhero-banner p{
@@ -161,7 +161,7 @@ a{
     }
     #hhero-banner{
         padding-top: 100px;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
         padding-left: 0px;
         padding-right: 0px;
         /* padding-bottom: 50px; */
@@ -173,8 +173,10 @@ a{
     #hhero-banner h2{
         font-size: 20px;
     }
-    #hero-banner .button-wrapper{
+    #hhero-banner .button-wrapper{
         flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: center; */
     }
     #hhero-banner .btn-play-store{
         margin-left: 0;
