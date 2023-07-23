@@ -19,6 +19,17 @@
     padding-right: 12px;
     padding-left: 12px;
 }
+.hcontainer:after {
+    content: '';
+    background-image: url(../images/baner-dec-left_one.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 267px;
+    height: 532px;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
 
 .hrow img{
     width: 100vw;
@@ -140,14 +151,7 @@ a{
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-#hhero-banner .services-left-dec img {
-    width: 387px;
-    height: 638px;
-    left: -80px;
-    top: -140px;
-    position: absolute;
-    z-index: 1
-}
+
 @keyframes up-down{
     0%{
         transform: translateY(10px);
@@ -207,7 +211,7 @@ a{
         position: relative;
         margin-top: 150px;
     }
-    #hhero-banner .services-left-dec img{
-        display: none;
+    .hcontainer:after{
+        background-image: none;
     }
 }
