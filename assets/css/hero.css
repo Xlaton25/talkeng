@@ -6,6 +6,7 @@
     /* max-width: 1140px; */
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
     padding-left: 15px;
     padding-right: 15px;
     /* font-family: 'Raleway', sans-serif; */
@@ -17,6 +18,17 @@
     flex-direction: row;
     padding-right: 12px;
     padding-left: 12px;
+}
+.hcontainer:after {
+    content: '';
+    background-image: url(../images/baner-dec-left_one.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 267px;
+    height: 532px;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 .hrow img{
@@ -49,8 +61,9 @@ a{
 #hhero-banner h1{
     font-size: 3vw;
     font-weight: bolder;
-    line-height: 50px;
-    margin: 0 0 10px 0;
+    /* line-height: 50px; */
+    line-height: 1.2;
+    margin: 5vw 0 10px 0;
     color: #03a4ed;
     /* margin-bottom: 1%; */
 }
@@ -118,6 +131,7 @@ a{
 #hhero-banner .btn-play-store img{
     width: 25px;
     padding-right: 5px;
+    margin-left: 5px;
 }
 #hhero-banner .btn-play-store i{
     font-size: 45px;
@@ -136,6 +150,8 @@ a{
 #hhero-banner .animated{
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+
+
 @keyframes up-down{
     0%{
         transform: translateY(10px);
@@ -148,9 +164,13 @@ a{
 @media(max-width:768px){
     .hcontainer{
         max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     .hrow{
         flex-direction: column-reverse;
+        padding-right: 0;
+        padding-left: 0;
     }
     #hhero-banner .img-fluid{
         margin-top: 50px ;
@@ -161,18 +181,23 @@ a{
     }
     #hhero-banner{
         padding-top: 100px;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
+        padding-left: 0px;
+        padding-right: 0px;
         /* padding-bottom: 50px; */
     }
     #hhero-banner h1{
-       margin-top: 20px;
+       margin-top: 30px;
        font-size: 8vw;
+       padding-top: 5px;
     }
     #hhero-banner h2{
         font-size: 20px;
     }
-    #hero-banner .button-wrapper{
+    #hhero-banner .button-wrapper{
         flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: center; */
     }
     #hhero-banner .btn-play-store{
         margin-left: 0;
@@ -185,5 +210,8 @@ a{
         padding-bottom: 50px; */
         position: relative;
         margin-top: 150px;
+    }
+    .hcontainer:after{
+        background-image: none;
     }
 }
