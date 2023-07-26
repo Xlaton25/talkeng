@@ -97,6 +97,7 @@ a{
     border-radius: 30px;
     box-shadow: 0 8px 28px rgba(195, 0, 91, 0.6);
     transition: all 0.3s ease-in-out;
+    z-index: 1;
 }
 
 #hhero-banner .btn-get-started:hover{
