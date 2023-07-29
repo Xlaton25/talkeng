@@ -15,7 +15,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	color: #f13f47;
-	margin-top: 30px;
+	margin-top: 50px;
 	margin-bottom: 5px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -28,6 +28,7 @@
 	font-weight: 900;
 }
 .box-area .content {
+	font-family: poppins, sans-serif;
 	color: #262626;
 }
 .box-area .img-area {
