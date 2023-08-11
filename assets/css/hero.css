@@ -163,6 +163,12 @@ a{
 }
 
 @media(max-width:768px){
+    *, ::before,::after{
+        /* box-sizing: border-box; */
+        margin-left: 0;
+        padding: 0;
+    
+    }
     .hcontainer{
         max-width: 100%;
         padding-left: 0;
