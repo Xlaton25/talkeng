@@ -1,0 +1,440 @@
+/* CSS File 
+	===================
+	Item Name: Sava - Creative pricing tables
+	Author: Ashish Maraviya
+	Version: 3.0
+	Copyright 2023-2024
+===================*/
+/*==============
+	Page General css
+=================*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  margin-top: -5px;
+  font-weight: 600;
+  color: #555;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+}
+
+h5 {
+  font-family: "Lato", sans-serif;
+}
+
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+.pp-section {
+  padding: 100px 0 85px 0;
+}
+
+.section-header {
+  margin-bottom: 33px;
+}
+
+.section-bg {
+  background-color: #eee;
+}
+
+/* .color-picker {
+  position: fixed;
+  right: -190px;
+  top: 200px;
+  width: 190px;
+  z-index: 9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.color-picker .settings-header {
+  background: -webkit-gradient(linear, left top, right top, from(#777), to(#444));
+  background: linear-gradient(to right, #777, #444);
+  padding: 5px 15px;
+}
+.color-picker .settings-header h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  padding: 4px 9px;
+}
+.color-picker .section {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #444;
+  overflow: auto;
+}
+.color-picker .section i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.color-picker a.handle {
+  position: absolute;
+  right: 190px;
+  width: 50px;
+  height: 43px;
+  color: #fff;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 25px;
+  z-index: -1;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, from(#777), to(#444));
+  background: linear-gradient(to right, #777, #444);
+  top: 0;
+}
+.color-picker .colors a {
+  width: 35px;
+  height: 35px;
+  margin: 7px 7px;
+  float: left;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.color-picker .skin a {
+  display: block;
+  width: 70px;
+  height: 30px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 5px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  border: 2px transparent solid;
+}
+.color-picker .skin a.actt {
+  border: 2px #fff solid;
+} */
+
+.color-1 {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+
+.color-2 {
+  background: -webkit-gradient(linear, left top, right top, from(#00eefa), to(#05b6eb));
+  background: linear-gradient(to right, #00eefa, #05b6eb);
+}
+
+.color-3 {
+  background: -webkit-gradient(linear, left top, right top, from(#ff9f0e), to(#ff4a10));
+  background: linear-gradient(to right, #ff9f0e, #ff4a10);
+}
+
+.color-4 {
+  background: -webkit-gradient(linear, left top, right top, from(#09e072), to(#007d1d));
+  background: linear-gradient(to right, #09e072, #007d1d);
+}
+
+.color-5 {
+  background: -webkit-gradient(linear, left top, right top, from(#ff729b), to(#ce002f));
+  background: linear-gradient(to right, #ff729b, #ce002f);
+}
+
+.color-6 {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+
+.plan-header .plan-title {
+  font-family: "Lato", sans-serif;
+}
+
+.plan-price .price {
+  font-family: "Lato", sans-serif;
+}
+
+.plan-list li {
+  font-family: "Lato", sans-serif;
+}
+
+.plan-button {
+  font-family: "Lato", sans-serif;
+}
+
+.owl-carousel-plan .owl-dots {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  left: 0;
+}
+.owl-carousel-plan button:focus {
+  outline: 0;
+}
+
+.owl-carousel-plan.owl-theme .owl-dots .owl-dot.active span {
+  width: 25px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.owl-carousel-plan.owl-theme .owl-dots .owl-dot span {
+  border: 1px solid #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*==============
+	End Page General css
+=================*/
+/* Start Pricing plan style 1 */
+
+
+/* End Pricing plan style 2 */
+/* Start Pricing plan style 3 */
+.plan-style-3 {
+  margin: 15px auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-3 .plan-header {
+  padding: 30px 0 38px 0;
+  position: relative;
+}
+.plan-style-3 .plan-header .layer-1 {
+  background-image: url("../img/2.png");
+  height: 200px;
+  width: 500px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: mover 4s infinite alternate;
+          animation: mover 4s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+.plan-style-3 .plan-header .layer-2 {
+  background-image: url("../img/3.png");
+  height: 200px;
+  width: 500px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: mover 6s infinite alternate;
+          animation: mover 6s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+.plan-style-3 .plan-header .layer-3 {
+  background-image: url("../img/4.png");
+  height: 175px;
+  width: 500px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  -webkit-animation: mover 7s infinite alternate;
+          animation: mover 7s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+.plan-style-3 .plan-header .plan-title {
+  margin: -14px 0 7px 0;
+  position: relative;
+  color: #f7f7f7;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.plan-style-3 .plan-price .price {
+  margin: -3px 0 0 0;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 46px;
+  color: #fff;
+  position: relative;
+}
+.plan-style-3 .plan-price .price span {
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.plan-style-3 .plan-list {
+  padding: 35px 0 15px 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  height: 476px;
+}
+.plan-style-3 .plan-list li {
+  margin: 0 30px;
+  position: relative;
+  list-style-type: none;
+  color: #888;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+}
+.plan-style-3 .plan-list li i {
+  margin-right: 5px;
+  position: relative;
+  font-size: 13px;
+  line-height: 42px;
+}
+.plan-style-3 .plan-list li i.far.fa-times-circle {
+  color: red;
+}
+.plan-style-3 .plan-list .tooltip-info {
+  cursor: pointer;
+}
+.plan-style-3 .plan-list .tooltip-hover-text {
+  color: #555;
+  font-weight: 600;
+}
+.plan-style-3 .tooltip-info .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  bottom: 35px;
+  left: 45%;
+  margin-left: -60px;
+}
+.plan-style-3 .tooltip-info .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+.plan-style-3 .tooltip-info:hover .tooltiptext {
+  visibility: visible;
+}
+.plan-style-3 .plan-bottom {
+  padding: 61px 0 42px 0;
+  position: relative;
+  overflow: hidden;
+}
+.plan-style-3 .plan-bottom .layer-1 {
+  background-image: url(../img/2.png);
+  height: 200px;
+  width: 500px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: mover 5s infinite alternate;
+          animation: mover 5s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+.plan-style-3 .plan-bottom .layer-2 {
+  background-image: url("../img/3.png");
+  height: 200px;
+  width: 500px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: mover 6s infinite alternate;
+          animation: mover 6s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+.plan-style-3 .plan-button {
+  padding: 13px 30px;
+  font-size: 15px;
+  font-weight: 1500;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: linear-gradient(45deg, #fff 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+.plan-style-3 .plan-button:hover {
+  background-position: 0%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* End Pricing plan style 3 */
+/* Start Pricing plan style 4 */
+
+/* End Pricing plan style 4 */
+/* Start Pricing plan style 5 */
+
+/* End Pricing plan style 6 */
