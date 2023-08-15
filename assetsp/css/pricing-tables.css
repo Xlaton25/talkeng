@@ -51,84 +51,6 @@ h6 {
   background-color: #eee;
 }
 
-/* .color-picker {
-  position: fixed;
-  right: -190px;
-  top: 200px;
-  width: 190px;
-  z-index: 9;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.color-picker .settings-header {
-  background: -webkit-gradient(linear, left top, right top, from(#777), to(#444));
-  background: linear-gradient(to right, #777, #444);
-  padding: 5px 15px;
-}
-.color-picker .settings-header h3 {
-  color: #fff;
-  margin: 0;
-  font-size: 20px;
-  text-align: center;
-  padding: 4px 9px;
-}
-.color-picker .section {
-  background: #fff;
-  padding: 20px;
-  border: 1px solid #444;
-  overflow: auto;
-}
-.color-picker .section i {
-  font-size: 16px;
-  margin-right: 10px;
-}
-.color-picker a.handle {
-  position: absolute;
-  right: 190px;
-  width: 50px;
-  height: 43px;
-  color: #fff;
-  -webkit-transition: all ease-in 0.3s;
-  transition: all ease-in 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 25px;
-  z-index: -1;
-  text-decoration: none;
-  background: -webkit-gradient(linear, left top, right top, from(#777), to(#444));
-  background: linear-gradient(to right, #777, #444);
-  top: 0;
-}
-.color-picker .colors a {
-  width: 35px;
-  height: 35px;
-  margin: 7px 7px;
-  float: left;
-  -webkit-transition: all ease-in 0.3s;
-  transition: all ease-in 0.3s;
-}
-.color-picker .skin a {
-  display: block;
-  width: 70px;
-  height: 30px;
-  margin-left: 0;
-  margin-top: 0;
-  margin-right: 5px;
-  float: left;
-  text-align: center;
-  line-height: 30px;
-  border: 2px transparent solid;
-}
-.color-picker .skin a.actt {
-  border: 2px #fff solid;
-} */
 
 .color-1 {
   background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
@@ -199,11 +121,7 @@ h6 {
 
 /*==============
 	End Page General css
-=================*/
-/* Start Pricing plan style 1 */
 
-
-/* End Pricing plan style 2 */
 /* Start Pricing plan style 3 */
 .plan-style-3 {
   margin: 15px auto;
@@ -305,7 +223,7 @@ h6 {
   padding: 35px 0 15px 0;
   margin-bottom: 0;
   background-color: #fff;
-  height: 476px;
+  height: 496px;
 }
 .plan-style-3 .plan-list li {
   margin: 0 30px;
