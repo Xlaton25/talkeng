@@ -3,13 +3,14 @@
 
 }
 .hcontainer{
-    max-width: 1140px;
+    /* max-width: 1140px; */
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
     padding-left: 15px;
     padding-right: 15px;
-    font-family: 'Raleway', sans-serif;
-    
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: var(--bs-font-sans-serif);  
 }
 .hrow{
     align-items: center;
@@ -17,8 +18,19 @@
     flex-direction: row;
     padding-right: 12px;
     padding-left: 12px;
-    
 }
+.hcontainer:after {
+    content: '';
+    background-image: url(../images/baner-dec-left_one.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 267px;
+    height: 532px;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
 .hrow img{
     width: 100vw;
     height: auto;
@@ -39,37 +51,42 @@ a{
     padding-right: 30px;
     
 }
-#hero-banner{
+#hhero-banner{
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     padding: 50px;
+    /* margin-top: 100px; */
+    /* margin-bottom: 50px; */
 }
-#hero-banner h1{
-    font-size: 70px;
-    font-weight: 500;
-    line-height: 70px;
-    margin: 0 0 10px 0;
-    color: #3e4450;
+#hhero-banner h1{
+    font-size: 3vw;
+    font-weight: bolder;
+    /* line-height: 50px; */
+    line-height: 1.2;
+    margin: 5vw 0 10px 0;
+    color: #03a4ed;
+    /* margin-bottom: 1%; */
 }
 
-#hero-banner h1 span{
-    font-weight: 700;
+
+#hhero-banner h1 span{
+    color: #f13f47;
 }
 
-#hero-banner h2{
+#hhero-banner p{
     font-size: 24px;
     font-weight: 500;
-    margin: 10 0 50px 0;
+    /* margin: 10px 0 50px 0; */
     color: #858ea1;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-#hero-banner .button-wrapper{
+#hhero-banner .button-wrapper{
     display: flex;
     align-items: center;
 }
 
-#hero-banner .btn-get-started{
+#hhero-banner .btn-get-started{
     font-size: 16px;
     display: inline-block;
     letter-spacing: 1px;
@@ -77,47 +94,65 @@ a{
     border: 1px solid rgb(241 63 71);
     color: #fff;
     padding: 10px 30px 12px 30px;
-    border-radius: 4px;
+    border-radius: 30px;
     box-shadow: 0 8px 28px rgba(195, 0, 91, 0.6);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
 }
 
-#hero-banner .btn-get-started:hover{
+#hhero-banner .btn-get-started:hover{
     background-color: #206bfb;
     /* color: rgb(238, 39, 129); */
     border: 1px solid #206bfb;
     box-shadow: 0 8px 28px rgba(0, 185, 195, 0.6);
+    transform: scale3d(1.03,1.03,1.03);
+
 }
 
-#hero-banner .btn-play-store{
+#hhero-banner .btn-play-store{
     margin-left: 25px;
     font-size: 16px;
-    color: #04a6f7;
-    padding: 8px 20px 8px 20px;
+    color: #fff;
+    padding: 10px 30px 12px 30px;
     display: inline-flex;
     align-items: center;
-    transition: all 0.25s ease-in-out;
-    
-    
+    background-color: black;
+    padding-left: 10px;
+    border-radius: 30px;
+    box-shadow: 0 8px 28px rgba(23, 23, 23, 0.6);
+    transition: all 0.3s ease-in-out;
+
     /* letter-spacing: 1px;
     border: 1px solid #206bfb;
-     color: #206bfb;
+    color: #206bfb;
     border-radius: 4px;
     box-shadow: 0 8px 28px rgba(0, 185, 195, 0.6); */
 }
 
-#hero-banner .btn-play-store i{
-    font-size: 45px;
-    padding-right: 10px;
+#hhero-banner .btn-play-store img{
+    width: 25px;
+    padding-right: 5px;
+    margin-left: 5px;
 }
-
-#hero-banner .btn-play-store:hover{
-    color: #62c1eedd;
+#hhero-banner .btn-play-store i{
+    font-size: 45px;
+    padding-right: 20px;
+}
+.pr{
+    padding-right: 0px;
+    
+}
+#hhero-banner .btn-play-store:hover{
+    background-color: rgb(57, 57, 57);
+    transform: scale3d(1.03,1.03,1.03);
+    box-shadow: 0 8px 28px rgba(56, 56, 56, 0.6);
     /* color: #13aaf0dd; */
 }
-#hero-banner .animated{
+#hhero-banner .animated{
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+
+
 @keyframes up-down{
     0%{
         transform: translateY(10px);
@@ -128,30 +163,62 @@ a{
 }
 
 @media(max-width:768px){
+    *, ::before,::after{
+        /* box-sizing: border-box; */
+        margin-left: 0;
+        padding: 0;
+    
+    }
     .hcontainer{
         max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     .hrow{
         flex-direction: column-reverse;
+        padding-right: 0;
+        padding-left: 0;
     }
-    #hero-banner .animated{
+    #hhero-banner .img-fluid{
+        margin-top: 50px ;
+    
+    }
+    #hhero-banner .animated{
         animation: none;
     }
-    #hero-banner{
-        padding-top: 30px;
+    #hhero-banner{
+        padding-top: 100px;
+        /* margin-bottom: 50px; */
+        padding-left: 0px;
+        padding-right: 0px;
+        /* padding-bottom: 50px; */
     }
-    #hero-banner h1{
-       margin-top: 20px;
+    #hhero-banner h1{
+       margin-top: 30px;
+       font-size: 8vw;
+       padding-top: 5px;
     }
-    #hero-banner h2{
+    #hhero-banner h2{
         font-size: 20px;
     }
-    #hero-banner .button-wrapper{
+    #hhero-banner .button-wrapper{
         flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: center; */
     }
-    #hero-banner .btn-play-store{
+    #hhero-banner .btn-play-store{
         margin-left: 0;
         margin-top: 15px;
         margin-bottom: 15px;
+        /* padding-left: 15px; */
+    }
+    .our-services{
+        /* padding-top: 50px;
+        padding-bottom: 50px; */
+        position: relative;
+        margin-top: 150px;
+    }
+    .hcontainer:after{
+        background-image: none;
     }
 }
