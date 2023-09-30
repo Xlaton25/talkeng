@@ -1,0 +1,123 @@
+
+/* Owl general css start */
+.owl-carousel-plan.owl-theme .owl-dots .owl-dot.active span {
+  background: #4c3bb3;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff4d10), to(#b76cd2));
+  background: linear-gradient(to bottom, #ff4d10 0, #b76cd2 100%);
+}
+.owl-carousel-plan.owl-theme .owl-dots .owl-dot span {
+  background: #4c3bb3;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4c3bb3), to(#b76cd2));
+  background: linear-gradient(to bottom, #b33b91 0, #b76cd2 100%);
+}
+
+/* Owl general css end */
+/* Start Pricing plan style 1 */
+.plan-style-1 .plan-header {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+.plan-style-1 .plan-button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#b76cd2), color-stop(#4c3bb3), color-stop(#4c3bb3), to(#b76cd2));
+  background-image: linear-gradient(to right, #b76cd2, #4c3bb3, #4c3bb3, #b76cd2);
+}
+.plan-style-1 .plan-list li i {
+  color: #4c3bb3;
+}
+.plan-style-1:hover {
+  border: 1px solid #b76cd2;
+}
+
+/* End Pricing plan style 1 */
+/* Start Pricing plan style 2 */
+.plan-style-2:hover {
+  border: 1px solid #b76cd2;
+}
+.plan-style-2:hover .price {
+  color: #4c3bb3;
+}
+.plan-style-2 .plan-button:hover {
+  color: #4c3bb3;
+}
+.plan-style-2 .plan-header {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+.plan-style-2 .plan-bottom {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+
+/* End Pricing plan style 2 */
+/* Start Pricing plan style 3 */
+.plan-style-3 .plan-header {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#ff4d10));
+  background: linear-gradient(to right, #b76cd2, #ff4d10);
+}
+.plan-style-3 .plan-bottom {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #ff4d10);
+}
+.plan-style-3 .plan-list li i.far.fa-check-circle {
+  color: #22cf25;
+}
+.plan-style-3 .plan-button:hover {
+  color: #4c3bb3;
+}
+.plan-style-3:hover {
+  border: 1px solid #b76cd2;
+}
+
+/* End Pricing plan style 3 */
+/* Start Pricing plan style 4 */
+.plan-style-4 .plan-header {
+  border-bottom: 5px solid #4c3bb3;
+}
+.plan-style-4 .plan-header .plan-label {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+.plan-style-4 .plan-header .plan-icon {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+.plan-style-4 .plan-price {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+.plan-style-4:hover .plan-title {
+  color: #4c3bb3;
+}
+.plan-style-4 .plan-button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#b76cd2), color-stop(#4c3bb3), color-stop(#4c3bb3), to(#b76cd2));
+  background-image: linear-gradient(to right, #b76cd2, #4c3bb3, #4c3bb3, #b76cd2);
+}
+
+/* End Pricing plan style 4 */
+/* Start Pricing plan style 5 */
+.plan-style-5 .plan-header .lable {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+.plan-style-5 .plan-header .plan-icon {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+.plan-style-5 .plan-price {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+.plan-style-5:hover {
+  border: 1px solid #b76cd2;
+}
+.plan-style-5:hover .plan-title {
+  color: #4c3bb3;
+}
+.plan-style-5 .plan-list li i.far.fa-check-circle {
+  color: #4c3bb3;
+}
+.plan-style-5 .plan-button {
+  color: #4c3bb3;
+  border: 2px solid #4c3bb3;
+}
+/*# sourceMappingURL=color-1.css.map */
