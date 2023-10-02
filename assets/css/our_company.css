@@ -1,0 +1,11 @@
+.our-company {
+    text-align: center;
+    padding: 0vw 8vw 0vw 8vw;
+}
+
+.c_container {
+    padding: 2vw 5vw 5vw 5vw;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border-radius: 45px;
+}
